@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Priorize - Lista de Tarefas</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+<body>
+
+    <header>
+        <h1 class="titulo">Justify</h1>
+        <p class="sub_titulo">Organize suas tarefas por prioridade</p>
+    </header>
+
+    <main class="container_background">
+        <h2 class="titulo_nova_tarefa" id="titulo-nova-tarefa">Adicionar nova tarefa</h2>
+        
+        <div class="container_principal">
+        
+            <section class="secao_formulario">
+            
+                <form id="formulario_tarefas">
+
+                    <label for="titulo_tarefa">Título</label>
+                    <input class="input_titulo" type="text" id="titulo_tarefa" required placeholder="Ex: Estudar JavaScript" />
+
+                    <label for="descricao_tarefa">Descrição</label>
+                    <textarea class="input_descriçao"
+                        id="descricao_tarefa" 
+                        rows="4" 
+                        placeholder="Ex: Fazer anotações, assistir aula gravada, revisar exercícios..." 
+                        required>
+                    </textarea>
+
+                    <label for="prioridade_tarefas">Prioridade</label>
+                    <select class="input_prioridade" id="prioridade_tarefas" required>
+                        <option value="">Selecione</option>
+                        <option value="alta">Alta</option>
+                        <option value="media">Média</option>
+                        <option value="baixa">Baixa</option>
+                    </select>
+
+                    <div class="botoes_formulario">
+                        <button class="adicionar" type="submit">Adicionar</button>
+                        <button class="cancelar" type="reset">Cancelar</button>
+                    </div>
+
+                </form>
+            </section>
+
+            <section class="secao_tarefas">
+                <h2>Minhas Tarefas</h2>
+                <ul class="container_tarefas" id="lista-tarefas">
+                    <!-- EXEMPLOS TEMPORÁRIOS -->
+
+                    <div class="container_crud">
+                        <li class="cartao_tarefa_alta">
+                            <h3>Estudar CRUD</h3>
+                            <p class="descricao">Focar no Create e Read primeiro</p>
+                            <p>Prioridade: Alta</p>        
+                        </li>
+                    </div>
+
+                    <div class="container_css">
+                        <li class="cartao_tarefa media">
+                            <h3>Revisar CSS</h3>
+                            <p class="descricao">Melhorar layout dos cartões</p>
+                            <p>Prioridade: Média</p>
+                        </li>
+                    </div>
+
+                    <div class="container_arquivo">
+                        <li class="cartao_tarefa baixa">
+                            <h3>Organizar arquivos</h3>
+                            <p class="descricao">Separar projetos por pastas</p>
+                            <p>Prioridade: Baixa</p>
+                        </li>
+                    </div>
+
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
+
